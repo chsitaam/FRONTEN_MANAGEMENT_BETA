@@ -66,7 +66,7 @@
           <i class="fas fa-sign-in-alt"></i>
           <span>Đăng nhập</span>
         </div>
-        <div class="auth-item logout">
+        <div class="auth-item logout"  @click="$emit('logout')">
           <i class="fas fa-sign-out-alt"></i>
           <span>Đăng xuất</span>
         </div>
