@@ -17,18 +17,37 @@
 
         <div class="menu-item" @click="toggleSubmenu('products')">
           <i class="fas fa-box"></i>
-          <span>Sản phẩm</span>
+          <span>Quản lý Sản phẩm</span>
           <i :class="['fas fa-chevron-down chevron', { open: isProductsOpen }]"></i>
         </div>
         <div class="submenu" :class="{ open: isProductsOpen }">
           <div class="submenu-item">Danh mục sản phẩm</div>
-          <div class="submenu-item">Sản phẩm mới</div>
-          <div class="submenu-item">Khuyến mãi</div>
+          <div class="submenu-item">Sản phẩm</div>
         </div>
 
         <div class="menu-item">
-          <i class="fas fa-shopping-cart"></i>
-          <span>Giỏ hàng</span>
+          <i class="fa-solid fa-receipt"></i>
+          <span>Đơn hàng</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-gift"></i>
+          <span>Khuyến mãi</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-users"></i>
+          <span>Người dùng</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-lock"></i>
+          <span>Bảo mật</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-gift"></i>
+          <span>Thống kê</span>
         </div>
 
         <div class="menu-item" @click="toggleSubmenu('documents')">
@@ -81,11 +100,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f8fafc;
-}
 
 .menu-toggle {
   position: fixed;
