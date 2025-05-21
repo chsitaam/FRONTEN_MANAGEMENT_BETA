@@ -87,6 +87,7 @@ export default {
   methods: {
     toggleSidebar() {
       this.isSidebarOpen = !this.isSidebarOpen;
+      this.$emit('toggle', this.isSidebarOpen); // Thêm dòng này
     },
     toggleSubmenu(menu) {
       if (menu === 'products') {
@@ -123,7 +124,6 @@ export default {
   width: 250px;
   height: 100vh;
   background: white;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
   transition: left 0.4s ease-out;
   z-index: 1000;
   display: flex;
